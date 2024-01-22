@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="output.css" rel="stylesheet" />
+    <title>IMDbTube</title>
+  </head>
+  <body class="bg-gray-100 dark:bg-slate-800">
+    <div class="container mx-auto pt-4 px-4">
+      <div
+        class="flex justify-center bg-emerald-800 p-4 border-4 border-black rounded"
+      >
+        <header class="">
+          <h1 class="text-4xl not-italic hover:italic"><span class="text-black">IMDb</span><span class="text-white">Tube</span></h1>
+        </header>
+      </div>
+    </div>
+    <div class="container mx-auto px-4">
+      <form id="searchBar" class="flex mt-4">
+        <input
+          id="search-input"
+          type="text"
+          class="flex-grow mr-2 p-2 border-4 border-black rounded"
+          placeholder="Enter Movie Title..."
+        />
+        <button
+          type="submit"
+          class="p-2 bg-emerald-800 text-white border-4 border-black rounded"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+    <div class="container mx-auto px-4">
+      <div class="flex border-b-4 border-black rounded">
+      <div id="video" class="container mx-auto pr-4 mt-4 pb-4"></div>
+      <div
+        id="imdbInfo"
+        class="container mx-auto pl-4 mt-4 pb-4 dark:text-white"
+      ></div>
+    </div>
+    </div>
+    <script src="https://apis.google.com/js/client.js?onload=init"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
